@@ -268,17 +268,11 @@ header .toggle__menu {
   background: url("/img/banner_img.jpg");
   background-size: cover;
   background-position: center center;
-  height: 500px;
-  width: 500px;
+  height: clamp(20rem, 35vw, 30rem);
+  width: clamp(20rem, 35vw, 30rem);
   animation: blobs 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
   overflow: hidden;
-}
-@media screen and (max-width: 900px) {
-  .banner__right .box {
-    height: 300px;
-    width: 300px;
-  }
 }
 
 .technologies p {
