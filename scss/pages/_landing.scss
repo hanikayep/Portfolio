@@ -111,10 +111,12 @@
     &__list{
         @include mediaQuery($break-sm){
             flex-wrap: wrap;
-
             .block{
                 display: block !important;
                 width: 100%;
+            }
+            div{
+                padding: .5rem 0;
             }
         }
         img{
@@ -150,11 +152,13 @@
         }
         .left{
             @include mediaQuery(){
+                padding-top: 1rem;
                 grid-row: 2;
                 text-align: center;
                 p{
                     margin: auto;
                 }
+
             }
             p{
                 width: 80%;
@@ -164,6 +168,7 @@
             }
             a{
                 padding: 5px;
+                font-size: clamp(.8rem, 2vw, 1rem);
                 font-weight: 500;
                 span.chevron{
                     visibility: hidden;
